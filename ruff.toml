@@ -64,7 +64,14 @@ select = [
     "RUF",  # Ruff rules
     "TRY",   # Tryceratops
 ]
-ignore = []
+ignore = [
+    "RET504", # I like explicit returns
+]
+
+[lint.per-file-ignores]
+"**/tests/*" = [
+    "S101" # Allow assert in tests
+]
 
 # Allow fix for all enabled rules (when `--fix`) is provided.
 fixable = ["ALL"]
