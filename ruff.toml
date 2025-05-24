@@ -1,0 +1,92 @@
+# Personal choice to use extended line length
+line-length = 120
+
+# Assume Python 3.9
+target-version = "py39"
+
+[lint]
+select = [
+    "AIR",   # airflow
+    "ERA",   # eradicate
+    "YTT",   # flake8 2020
+    "ANN",   # flake89 Annotations
+    "ASYNC", # flake8 Async
+    "S",     # flake8 bandit
+    "BLE",   # flake8 blind except
+    "FBT",   # flake8 boolean trap
+    "B",     # flake8 bugbear
+    "A",     # flake8 builtins
+    "COM",   # flake8 commas
+    "C4",    # flake8 comprehensions
+    "DTZ",   # flake8 datetimez
+    "T10",   # falke8 debugger
+    "DJ",    # flake8 django
+    "EM",    # flake8 error message
+    "EXE",   # flake8 executable
+    "FIX",   # flake8 fixme
+    "FA",    # flake8 future Annotations
+    "INT",   # flake8 get text
+    "ISC",   # flake8 implicit str concat
+    "ICN",   # flake8 import conventions
+    "LOG",   # flake8 logging
+    "G",     # flake8 logging format
+    "INP",   # flake8 no pep 420
+    "PIE",   # flake8 pie
+    "T20",   # flake8 print
+    "PYI",   # flake8 pyi
+    "PT",    # flake8 pytest style
+    "Q",     # flake8 quotes
+    "RSE",   # flake8 raise
+    "RET",   # flake8 return
+    "SLF",   # flake8 self
+    "SIM",   # flake8 simplify
+    "SLOT",  # flake8 slots
+    "TID",   # flake8 tidy imports
+    "TD",    # flake8 todos
+    "TC",    # flake8 type checking
+    "ARG",   # flake8 unused arguments
+    "PTH",   # flake8 use pathlib
+    "FLY",   # flynt
+    "I",     # isort
+    "C90",   # mccabe
+    "NPY",   # numpy specific rules
+    "PD",    # pandas
+    "N",     # pep8 naming
+    "PERF",  # perflint
+    "E",     # pycodestyle
+    "W",     # pycodestyle
+    "DOC",   # Pydocstyle
+    "F",     # pyflakes
+    "PGH",   # pygrep hooks
+    "PL",    # pylint
+    "UP",    # pyupgrade
+    "FURB",  # Refurb
+    "RUF",  # Ruff rules
+    "TRY",   # Tryceratops
+]
+ignore = []
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+[format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+# Enable auto-formatting of code examples in docstrings. Markdown,
+# reStructuredText code/literal blocks and doctests are all supported.
+docstring-code-format = true
+
+# Set the line length limit used when formatting code snippets in
+# docstrings.
+docstring-code-line-length = "dynamic"
