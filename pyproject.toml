@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wordle_solver"
+version = "0.1.0"
+description = "A Wordle solver that uses a dictionary to find the best guesses."
+authors = [
+    { name = "Gwen Nealon", email = "nealon.gwen@gmail.com" }
+]
+dependencies = [
+
+]
+requires-python = ">=3.9"
+license = "MIT"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Games/Entertainment :: Puzzle Games",
+    "Typing :: Typed",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+]
+
